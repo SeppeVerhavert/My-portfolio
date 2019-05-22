@@ -15,10 +15,10 @@ $black: #353535;
 $gray: #4f4f4f;
 $medium-gray: #737373;
 $light-gray: #c4c4c4;
-$orange: #f96855;
+$blue: #6c789b;
 
 // Semantic color names
-$accent: $orange;
+$accent: $blue;
 
 $body-background: $black;
 $menu-background: $gray;
@@ -54,12 +54,16 @@ body {
   background: $menu-background;
   flex: 1 1 20%;
   min-width: 300px;
-  padding: 3em;
+  padding: 2em;
 }
 
 .logo {
   text-transform: uppercase;
   margin-bottom: 2em;
+
+  p {
+    color: $light-gray;
+  }
 
   @media (min-width: 1500px) {
     margin-bottom: 5em;
@@ -67,6 +71,7 @@ body {
 
   span {
     font-weight: $font-bold;
+    color: $blue;
   }
 }
 
@@ -91,7 +96,7 @@ body {
 // ===================
 
 .main-content {
-  padding: 10%;
+  padding: 5%;
   flex: 1 1 80%;
   min-height: 100vh;
 }
@@ -103,7 +108,7 @@ body {
 .portfolio {
     display: grid;
     height: 100%;
-    grid-template-rows: repeat(8, 1fr) ;
+    grid-template-rows: repeat(6, 1fr) ;
     grid-template-columns: repeat(5, 1fr) ;
     grid-gap: 20px;
 }
@@ -140,6 +145,11 @@ body {
   &.wide {
     grid-row: span 2;
     grid-column: span 3;
+  }
+
+  &.small-tall {
+    grid-row: span 2;
+    grid-column: span 1;
   }
 }
 

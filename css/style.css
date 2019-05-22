@@ -15,16 +15,19 @@ body {
   background: #4f4f4f;
   flex: 1 1 20%;
   min-width: 300px;
-  padding: 3em; }
+  padding: 2em; }
 
 .logo {
   text-transform: uppercase;
   margin-bottom: 2em; }
+  .logo p {
+    color: #c4c4c4; }
   @media (min-width: 1500px) {
     .logo {
       margin-bottom: 5em; } }
   .logo span {
-    font-weight: 700; }
+    font-weight: 700;
+    color: #6c789b; }
 
 .nav-item {
   color: #737373;
@@ -40,19 +43,19 @@ body {
     color: #c4c4c4; }
 
 .main-content {
-  padding: 10%;
+  padding: 5%;
   flex: 1 1 80%;
   min-height: 100vh; }
 
 .portfolio {
   display: grid;
   height: 100%;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px; }
 
 .portfolio-item {
-  background: #f96855;
+  background: #6c789b;
   color: #353535;
   font-weight: 700;
   display: flex;
@@ -74,6 +77,9 @@ body {
   .portfolio-item.wide {
     grid-row: span 2;
     grid-column: span 3; }
+  .portfolio-item.small-tall {
+    grid-row: span 2;
+    grid-column: span 1; }
 
 .two {
   background-image: url(//unsplash.it/800/600);
