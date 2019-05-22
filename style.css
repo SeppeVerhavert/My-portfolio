@@ -1,102 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
-* {
-  box-sizing: border-box; }
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss
 
-body {
-  background: #353535;
-  color: #c4c4c4;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.45;
-  display: flex;
-  flex-wrap: wrap; }
-
-.sidebar {
-  background: #4f4f4f;
-  flex: 1 1 20%;
-  min-width: 300px;
-  padding: 3em; }
-
-.logo {
-  text-transform: uppercase;
-  margin-bottom: 2em; }
-  @media (min-width: 1500px) {
-    .logo {
-      margin-bottom: 5em; } }
-  .logo span {
-    font-weight: 700; }
-
-.nav-item {
-  color: #737373;
-  text-decoration: none;
-  font-size: 1.7rem;
-  display: inline-block;
-  margin-right: 2em; }
-  @media (min-width: 1500px) {
-    .nav-item {
-      display: block;
-      margin: 7vh 0; } }
-  .nav-item.active {
-    color: #c4c4c4; }
-
-.main-content {
-  padding: 10%;
-  flex: 1 1 80%;
-  min-height: 100vh; }
-
-.portfolio {
-  display: grid;
-  height: 100%;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px; }
-
-.portfolio-item {
-  background: #f96855;
-  color: #353535;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em; }
-  .portfolio-item.small {
-    grid-row: span 1;
-    grid-column: span 1; }
-  .portfolio-item.medium {
-    grid-row: span 2;
-    grid-column: span 2; }
-  .portfolio-item.large {
-    grid-row: span 3;
-    grid-column: span 3; }
-  .portfolio-item.tall {
-    grid-row: span 3;
-    grid-column: span 2; }
-  .portfolio-item.wide {
-    grid-row: span 2;
-    grid-column: span 3; }
-
-.two {
-  background-image: url(//unsplash.it/800/600);
-  color: #c4c4c4;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  background-size: cover;
-  background-position: top left;
-  transition: all ease-in-out 300ms;
-  position: relative;
-  z-index: 10; }
-  .two::before {
-    content: '';
-    display: block;
-    background: black;
-    position: absolute;
-    opacity: 0.8;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: all ease-in-out 300ms;
-    z-index: -1; }
-  .two:hover:before {
-    opacity: 0.2; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:484:in `read'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:294:in `watch'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:109:in `method_missing'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:356:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }
