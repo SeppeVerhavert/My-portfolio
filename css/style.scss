@@ -18,7 +18,7 @@ $light-grey: #c4c4c4;
 $blue: #6c789b;
 
 // Semantic color names
-$accent: $blue;
+$accent: $light-grey;
 
 $body-background: $black;
 $menu-background: $grey;
@@ -118,7 +118,9 @@ body {
   color: $body-background;
   font-weight: $font-bold;
   display: flex;
-  align-items: end;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   &.small {
     grid-row: span 1;
@@ -158,9 +160,9 @@ body {
   &::before {
       content:'';
       display: block;
-      background:$blue;
+      background:$grey;
       position: absolute;
-      opacity: 0.8;
+      opacity: 0.7;
       top: 0;
       right: 0;
       bottom: 0;
@@ -171,7 +173,7 @@ body {
 
   &:hover:before {
     opacity: 0.2;
-    color: $blue;
+    color: $grey;
   }
 }
 
@@ -183,19 +185,14 @@ body {
   background-image: url(../assets/images/bormshuis.jpg)
 }
 
+.cv {
+  background-image: url(../assets/images/cv.jpg)
+}
+
+.errorpage {
+  background-image: url(../assets/images/404.jpg)
+}
+
 // ===================
 // PORTFOLIO CONTENT
 // ===================
-
-.portfolio-content {
-  box-sizing: border-box;
-  padding: 10px;
-  background-color: $medium-grey;
-
-  .portfolio-icons {
-    a {
-      color: $light-grey;
-      padding: 0 1em 0 1em;
-    }
-  }
-}
