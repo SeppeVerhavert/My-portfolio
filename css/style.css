@@ -118,7 +118,13 @@ body {
   background-image: url(../assets/images/404.jpg); }
 
 button {
-  font-size: 2em;
-  background-color: #6c789b; }
+  display: inline-block;
+  background-color: #6c789b;
+  border: 1em solid #6c789b;
+  border-radius: .5em;
+  color: #c4c4c4;
+  text-decoration: none;
+  font: bold 1rem sans-serif;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
