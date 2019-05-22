@@ -173,10 +173,10 @@ body {
   &:hover:before {
       opacity: 0.2;
   }
+}
 
-  .gameplay {
-    background-image: url(../assets/images/gameplay.jpg)
-  }
+.gamplay {
+  background-image: url(../assets/images/gameplay.jpg);
 }
 
 // ===================
@@ -186,7 +186,7 @@ body {
 .portfolio-content {
   box-sizing: border-box;
   padding: 20px;
-  display: flex;
+  display: inline-flex;
 
   .portfolio-text {
     h2   {

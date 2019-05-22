@@ -99,13 +99,14 @@ body {
     z-index: -1; }
   .portfolio-item:hover:before {
     opacity: 0.2; }
-  .portfolio-item .gameplay {
-    background-image: url(../assets/images/gameplay.jpg); }
+
+.gamplay {
+  background-image: url(../assets/images/gameplay.jpg); }
 
 .portfolio-content {
   box-sizing: border-box;
   padding: 20px;
-  display: flex; }
+  display: inline-flex; }
   .portfolio-content .portfolio-text h2 {
     color: #6c789b; }
   .portfolio-content .portfolio-text p {
