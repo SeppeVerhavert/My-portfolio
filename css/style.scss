@@ -153,31 +153,31 @@ body {
   }
 }
 
-.two {
-    background-image: url(//unsplash.it/800/600);
-    color: $light-gray;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    background-position: top left;
-    transition: all ease-in-out 300ms;
-    position: relative;
-    z-index: 10;
+.gameplay {
+  background-image: url(../assets/images/gameplay.jpg);
+  color: $light-gray;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
 
-    &::before {
-        content:'';
-        display: block;
-        background: black;
-        position: absolute;
-        opacity: 0.8;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transition: all ease-in-out 300ms;
-        z-index: -1;
-    }
+  &::before {
+      content:'';
+      display: block;
+      background: black;
+      position: absolute;
+      opacity: 0.8;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: all ease-in-out 300ms;
+      z-index: -1;
+  }
 
-    &:hover:before {
-        opacity: 0.2;
-    }
+  &:hover:before {
+      opacity: 0.2;
+  }
 }

@@ -81,16 +81,16 @@ body {
     grid-row: span 2;
     grid-column: span 1; }
 
-.two {
-  background-image: url(//unsplash.it/800/600);
+.gameplay {
+  background-image: url(../assets/images/gameplay.jpg);
   color: #c4c4c4;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   background-size: cover;
-  background-position: top left;
+  background-position: center;
   transition: all ease-in-out 300ms;
   position: relative;
   z-index: 10; }
-  .two::before {
+  .gameplay::before {
     content: '';
     display: block;
     background: black;
@@ -102,7 +102,7 @@ body {
     left: 0;
     transition: all ease-in-out 300ms;
     z-index: -1; }
-  .two:hover:before {
+  .gameplay:hover:before {
     opacity: 0.2; }
 
 /*# sourceMappingURL=style.css.map */
