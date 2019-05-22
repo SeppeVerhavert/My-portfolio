@@ -91,7 +91,7 @@ body {
     display: block;
     background: #4f4f4f;
     position: absolute;
-    opacity: 0.7;
+    opacity: 0.5;
     top: 0;
     right: 0;
     bottom: 0;
@@ -110,6 +110,9 @@ body {
 
 .cv {
   background-image: url(../assets/images/cv.jpg); }
+
+.responsive {
+  background-image: url(../assets/images/responsivedesign.jpg); }
 
 .errorpage {
   background-image: url(../assets/images/404.jpg); }
