@@ -59,8 +59,7 @@ body {
   color: #353535;
   font-weight: 700;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  align-items: end; }
   .portfolio-item.small {
     grid-row: span 1;
     grid-column: span 1; }
@@ -88,7 +87,7 @@ body {
   .portfolio-item::before {
     content: '';
     display: block;
-    background: black;
+    background: #6c789b;
     position: absolute;
     opacity: 0.8;
     top: 0;
@@ -98,22 +97,21 @@ body {
     transition: all ease-in-out 300ms;
     z-index: -1; }
   .portfolio-item:hover:before {
-    opacity: 0.2; }
+    opacity: 0.2;
+    color: #6c789b; }
 
 .gamplay {
   background-image: url(../assets/images/gameplay.jpg); }
 
+.guerilla {
+  background-image: url(../assets/images/bormshuis.jpg); }
+
 .portfolio-content {
   box-sizing: border-box;
-  padding: 20px;
-  display: inline-flex; }
-  .portfolio-content .portfolio-text h2 {
-    color: #6c789b; }
-  .portfolio-content .portfolio-text p {
-    font-size: 1em; }
-  .portfolio-content .portfolio-icons {
+  padding: 10px;
+  background-color: #737373; }
+  .portfolio-content .portfolio-icons a {
+    color: #c4c4c4;
     padding: 0 1em 0 1em; }
-    .portfolio-content .portfolio-icons a {
-      color: white; }
 
 /*# sourceMappingURL=style.css.map */

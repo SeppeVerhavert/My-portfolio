@@ -12,20 +12,20 @@ $font-bold: 700;
 
 // Colors
 $black: #353535;
-$gray: #4f4f4f;
-$medium-gray: #737373;
-$light-gray: #c4c4c4;
+$grey: #4f4f4f;
+$medium-grey: #737373;
+$light-grey: #c4c4c4;
 $blue: #6c789b;
 
 // Semantic color names
 $accent: $blue;
 
 $body-background: $black;
-$menu-background: $gray;
+$menu-background: $grey;
 
-$main-font-color: $light-gray;
-$menu-active-color: $light-gray;
-$menu-font-color: $medium-gray;
+$main-font-color: $light-grey;
+$menu-active-color: $light-grey;
+$menu-font-color: $medium-grey;
 $link-color: $accent;
 
 // ===================
@@ -62,7 +62,7 @@ body {
   margin-bottom: 2em;
 
   p {
-    color: $light-gray;
+    color: $light-grey;
   }
 
   @media (min-width: 1500px) {
@@ -118,8 +118,7 @@ body {
   color: $body-background;
   font-weight: $font-bold;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: end;
 
   &.small {
     grid-row: span 1;
@@ -148,7 +147,7 @@ body {
 }
 
 .portfolio-item {
-  color: $light-gray;
+  color: $light-grey;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-position: center;
@@ -159,7 +158,7 @@ body {
   &::before {
       content:'';
       display: block;
-      background: black;
+      background:$blue;
       position: absolute;
       opacity: 0.8;
       top: 0;
@@ -171,12 +170,17 @@ body {
   }
 
   &:hover:before {
-      opacity: 0.2;
+    opacity: 0.2;
+    color: $blue;
   }
 }
 
 .gamplay {
   background-image: url(../assets/images/gameplay.jpg);
+}
+
+.guerilla {
+  background-image: url(../assets/images/bormshuis.jpg)
 }
 
 // ===================
@@ -185,21 +189,13 @@ body {
 
 .portfolio-content {
   box-sizing: border-box;
-  padding: 20px;
-  display: inline-flex;
+  padding: 10px;
+  background-color: $medium-grey;
 
-  .portfolio-text {
-    h2   {
-      color: $blue;
-    }
-    p {
-      font-size: 1em;
-    }
-  }
   .portfolio-icons {
-    padding: 0 1em 0 1em;
     a {
-      color: white;
+      color: $light-grey;
+      padding: 0 1em 0 1em;
     }
   }
 }
