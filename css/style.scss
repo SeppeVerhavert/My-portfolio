@@ -153,7 +153,6 @@ body {
 
 .portfolio-item {
   color: $light-grey;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-position: center;
   transition: all ease-in-out 300ms;
@@ -175,7 +174,7 @@ body {
   }
 
   &:hover:before {
-    opacity: 0.2;
+    opacity: 0.1;
   }
 }
 
@@ -203,8 +202,7 @@ body {
 // PORTFOLIO CONTENT
 // ===================
 
-
-.portfolio-link {
-  text-decoration: none;
-  background-color: black;
+button {
+  font-size: 2em;
+  background-color: $blue;
 }

@@ -82,7 +82,6 @@ body {
 
 .portfolio-item {
   color: #c4c4c4;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-position: center;
   transition: all ease-in-out 300ms;
@@ -101,7 +100,7 @@ body {
     transition: all ease-in-out 300ms;
     z-index: -1; }
   .portfolio-item:hover:before {
-    opacity: 0.2; }
+    opacity: 0.1; }
 
 .gamplay {
   background-image: url(../assets/images/gameplay.jpg); }
@@ -118,8 +117,8 @@ body {
 .errorpage {
   background-image: url(../assets/images/404.jpg); }
 
-.portfolio-link {
-  text-decoration: none;
-  background-color: black; }
+button {
+  font-size: 2em;
+  background-color: #6c789b; }
 
 /*# sourceMappingURL=style.css.map */
