@@ -114,8 +114,9 @@ body {
 .Nyan {
   background-image: url(../assets/images/NyanCat.jpg); }
 
-.errorpage {
-  background-image: url(../assets/images/404.jpg); }
+.peerprogramming {
+  background-image: url(../assets/images/peerprogram.jpg)
+}
 
 button {
   display: inline-block;
