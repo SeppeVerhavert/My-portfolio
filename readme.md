@@ -2,11 +2,11 @@
 
 ### Assignment
 
-Create a portfolio of your time at BeCode with CSS grid and Sass.
+Create a portfolio of your time at BeCode with CSS grid.
 
 ### Dependencies
 
-  - Sass
+  - CSS Grid
   - Awesome Font
   - Github
   
